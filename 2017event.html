@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport"-->
+    <!--content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>2017，并没有</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <link rel="stylesheet" href="./css/style.css?v=1516757839536">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jq.imgproload.js"></script>
+    <link rel="shotcut icon" href="//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/fisp_static/common/img/favicon.ico">
+    <link rel="prefetch" href="./media/v-2.mp4"/>
+</head>
+<body ontouchstart="">
+<div class="loading-box">
+    <div class="loading-bar">
+        <div class="loading-num">
+            <div class="loading-line">
+                <img src="./img/loading_line.png" class="loading-line-img img">
+            </div>
+            <div class="loading_light_cantainer">
+                <img src="./img/loading_light.png" class="loading_light img">
+            </div>
+        </div>
+        <img class="loading-text" src="./img/loading_text.png"/>
+    </div>
+</div>
+<div class="container">
+    <div class="guide gif" id="guide">
+        <img src="./img/t.gif" class="pt img" id="imgPt"/>
+        <div class="text"></div>
+        <img src="./img/btn-begin.png" class="btn-begin img" id="imgBegin"/>
+        <div id="btnBegin"></div>
+        <div class="later-text" id="laterText">加载中，请稍后……</div>
+    </div>
+    <div class="video-box" id="videoBox">
+        <div class="video-wrapper" id="videoWrapper">
+            <video
+                    id="video"
+                    poster="./media/avatar.jpg"
+                    preload="auto"
+                    playsinline="true"
+                    webkit-playsinline="true"
+                    x-webkit-airplay="true"
+                    x5-video-player-type="h5"
+                    x5-video-player-fullscreen="true"
+                    x5-video-orientation="portraint"
+                    style="object-fit:fill;object-position:50%"
+            >
+                <source src="./media/v-2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <img src="./img/btn-trigger-1.png" class="btn-trigger img run none" id="btnTrigger_1">
+        <img src="./img/btn-trigger-2.png" class="btn-trigger img run" id="btnTrigger_2">
+    </div>
+    <div class="end" id="end">
+        <div class="text"></div>
+        <img src="./img/btn-replay.png" class="btn-replay img">
+        <div id="btnReplay"></div>
+        <img src="./img/copyright-1.png" class="baidu-copyright copyright-1 img">
+        <img src="./img/copyright-2.png" class="baidu-copyright copyright-2 img">
+        <img src="./img/share.png" id="share_1" class="share img">
+        <img src="./img/share-2.png" id="share_2" class="share-2 img">
+
+        <a id="btnBox" class="btn-box" onlick="_hmt.push(['_trackEvent, 'btn, 'click, 'shoubai]);"></a>
+        <a id="btnNews" class="btn-news" onlick="_hmt.push(['_trackEvent, 'btn, 'click, 'news]);"></a>
+    </div>
+</div>
+</body>
+<!--<script src="./js/vconsole.min.js"></script>-->
+<script>
+    //    var vconsole = new VConsole();
+    ratio = 640 / 180;
+</script>
+<script src="./js/main.js?v=1516757839536"></script>
+<script type="text/javascript"
+        src="https://b.bdstatic.com/searchbox/icms/searchbox/js/common/openjs/shareconfig.min.js?x-bs-version=1.4"></script>
+<script type="text/javascript" src="https://s.bdstatic.com/po/??bdbox/core_5b00285.js"></script>
+<script type="text/javascript" src="https://s.bdstatic.com/common/openjs/openBox.js?_v=2017072513"></script>
+<script type="text/javascript" src="https://news.baidu.com/z/resource/wap/huodong/lib/opennews.js"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3921fc3e5b3de1f55004904e6b6fd4b4";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script type="text/javascript">
+    //分享start
+    !function () {
+        document.addEventListener("DOMContentLoaded", function (event) {
+            shareConfig.init({
+                debug: location.href.indexOf('share_debug=1') > 0,
+                title: '2017，并没有：用历史解答这一年的不足与遗憾',
+                linkUrl: window.location.href,
+                content: '过去一年的很多事并没有带来太多改变，但历史上那些类似的事，似乎给过我们答案......',
+                iconUrl: window.location.origin + '/z/resource/wap/huodong/knch/img/share.jpg',
+
+                // 手百分享配置（如果使用手百分享，则必填）
+                bdbox: {
+                    source: 'bdnews' // 用于统计手百分享的来源，必填
+                }
+
+
+            });
+        });
+    }();
+
+    // 手百调吊起start
+    var openbox = window.OpenBox({
+        url: location.href
+    });
+
+    $('#btnBox').click(function () {
+        openbox.open()
+    });
+
+    $('#btnNews').click(function () {
+        window.toShare({}, 4)
+    });
+</script>
+
+</html>

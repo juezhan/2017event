@@ -1,0 +1,717 @@
+@charset "utf-8";
+html, body {
+    width: 100%;
+    height: 100%
+}
+
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+    margin: 0;
+    padding: 0
+}
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+    display: block
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+caption, th {
+    text-align: left;
+    font-weight: 400
+}
+
+html, body, fieldset, img, iframe, abbr {
+    border: 0
+}
+
+i, cite, em, var, address, dfn {
+    font-style: normal;
+    font-weight: 400
+}
+
+[hidefocus], summary {
+    outline: 0
+}
+
+ol, ul, li {
+    list-style: none
+}
+
+h1, h2, h3, h4, h5, h6, small {
+    font-size: 100%;
+    font-weight: 400
+}
+
+sup, sub {
+    font-size: 83%
+}
+
+pre, code, kbd, samp {
+    font-family: inherit
+}
+
+q:before, q:after {
+    content: none;
+    content: ''
+}
+
+textarea {
+    overflow: auto;
+    resize: none
+}
+
+label, summary {
+    cursor: default
+}
+
+a, button {
+    cursor: pointer
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+    font-weight: 700
+}
+
+del, ins, u, s, a, a:hover {
+    text-decoration: none
+}
+
+body, textarea, input, button, select, keygen, legend {
+    font: 12px/1.14 arial, \5b8b\4f53;
+    color: #333;
+    outline: 0
+}
+
+body {
+    background: #000000;
+    font-family: 'Microsoft YaHei', 'STHeiti', Helvetica, Arial, sans-serif;
+}
+
+a, a:hover {
+    color: #333
+}
+
+.clearfix:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both
+}
+
+.clearfix {
+    zoom: 1
+}
+
+div, a, img {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.pos {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.auto {
+    left: 0;
+    right: 0;
+    margin: 0 auto
+}
+
+.loading-box {
+    background: url(../img/loading-bg.jpg?v=54321) no-repeat;
+    background-size: 100% 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.loading-box .title {
+    position: absolute;
+    top: 1.3rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 6.66rem;
+    height: 3.18rem
+}
+
+.loading-box .loading-bar {
+    position: absolute;
+    background: url(../img/loading_bar.png) no-repeat;
+    background-size: 100% 100%;
+    width: 5.49rem;
+    height: 1.22rem;
+    left: 1.03rem;
+    top: 50%;
+    transform: translate3d(0, -.15rem, 0);
+}
+
+.loading-box .loading_bar_2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -1rem;
+    bottom: 1rem;
+    width: 2rem;
+    height: .24rem;
+}
+
+.loading-text {
+    position: absolute;
+    width: 1.35rem;
+    height: .22rem;
+    top: .05rem;
+    left: 2.2rem;
+}
+
+.loading-box .go-btn {
+    display: none;
+    position: absolute;
+    bottom: 1.3rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 3.28rem;
+    height: 1.45rem
+}
+
+.loading-box .sdmen {
+    position: absolute;
+    bottom: 3.3rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 3.19rem;
+    height: 2.99rem
+}
+
+.loading-box .loading-num {
+    position: absolute;
+    bottom: .38rem;
+    border-radius: 5px;
+    width: 5.36rem;
+    height: .23rem;
+    left: .05rem;
+    top: .04rem;
+    white-space: nowrap;
+}
+
+.loading-box .loading-line {
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    top: -.0rem;
+    position: relative;
+}
+
+.loading-box .loading-line-img {
+    width: 5.36rem;
+    height: .23rem;
+    display: block;
+}
+
+.loading-box .loading_light_cantainer {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    width: 0;
+}
+
+.loading-box .loading_light_cantainer .loading_light {
+    position: absolute;
+    left: -.525rem;
+    top: -.475rem;
+    width: 1.05rem;
+    height: 1.18rem;
+    animation: twinkle 2s linear infinite;
+}
+
+.loading-box .advice {
+    position: absolute;
+    bottom: .3rem;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.guide,
+.end,
+.container {
+    display: none;
+    position: relative;
+    background: url(../img/main-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+    width: 100%;
+    height: 100%
+}
+
+.guide.gif {
+    background-image: url(../img/t.gif);
+}
+
+.guide.end {
+    background-image: url(../img/t-end.jpg);
+}
+
+.container .video-box {
+    overflow: hidden;
+    background-size: 100% 100%;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.container #video {
+    background-color: #000000;
+}
+
+.container .help-box {
+    display: none;
+    overflow: hidden;
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.container .help-box .help-bg {
+    width: 100%;
+    height: 100%
+}
+
+.container .help-box .help-label {
+    position: absolute;
+    top: 1rem;
+    left: 1.2rem;
+    background-size: 100% 100%;
+    width: 3.26rem;
+    height: 2.29rem
+}
+
+.container .help-box .help-label .help-text {
+    position: absolute;
+    top: .5rem;
+    left: .8rem;
+    width: 1.78rem;
+    height: 1.04rem
+}
+
+.container .help-box .pointer {
+    position: absolute;
+    top: .7rem;
+    left: 4.1rem;
+    animation-duration: .5s;
+    width: .86rem;
+    height: 1.04rem
+}
+
+.container .help-box .pointer-text {
+    position: absolute;
+    top: .3rem;
+    left: 5rem;
+    animation-duration: .5s;
+    width: 1.41rem;
+    height: .8rem
+}
+
+.container .help-box .pointer-zh {
+    position: absolute;
+    top: .5rem;
+    left: 4.1rem;
+    width: 2.27rem;
+    height: 1.34rem
+}
+
+.container .share-box {
+    display: none;
+    overflow: hidden;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.container .share-box img {
+    position: absolute
+}
+
+.container .share-box .share-bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.container .share-box .people {
+    top: 1.76rem;
+    left: 1.82rem;
+    width: 3.51rem;
+    height: 3.29rem
+}
+
+.container .share-box .download {
+    bottom: .4rem;
+    left: 1.2rem;
+    width: 3.54rem;
+    height: 1.41rem
+}
+
+.container .share-box .again {
+    bottom: .4rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1.14rem;
+    height: 1.23rem
+}
+
+.container .share-box .share-friend {
+    bottom: .4rem;
+    right: 1.2rem;
+    width: 3.54rem;
+    height: 1.31rem
+}
+
+.container .share-box .shade-share {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%
+}
+
+.container .share-box .shade-share img {
+    width: 100%;
+    height: 100%
+}
+
+.container .call-friend {
+    bottom: .4rem;
+    left: 2.2rem;
+    width: 3.1rem;
+    height: 1.31rem
+}
+
+.container .rewatch {
+    bottom: .4rem;
+    right: 2.2rem;
+    width: 3.1rem;
+    height: 1.31rem
+}
+
+.music-text {
+    position: fixed;
+    top: .6rem;
+    right: 1.2rem;
+    z-index: 999;
+    width: 1.05rem;
+}
+
+.music-symbol {
+    position: absolute;
+    top: .18rem;
+    right: .21rem;
+    z-index: 999;
+    width: 1rem;
+    height: 1rem;
+    background: url(../img/music-symbol-2.png) 50% 50% no-repeat;
+    background-size: .44rem .44rem;
+    -webkit-animation: stop 1s linear infinite;
+    animation: stop 1s linear infinite;
+}
+
+.music-symbol.run {
+    background-image: url("../img/music-symbol.png");
+    -webkit-animation: run 3s linear infinite;
+    animation: run 3s linear infinite;
+}
+
+@-webkit-keyframes run {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes run {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes stop {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes stop {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.guide {
+    display: block;
+    z-index: 100;
+}
+
+.guide .text {
+    position: absolute;
+    left: .2rem;
+    right: .2rem;
+    top: 50%;
+    font-size: .32rem;
+    line-height: .44rem;
+    text-align: center;
+    color: #eceff1;
+    transform: translate3d(0, -50%, 0);
+    pointer-events: none;
+}
+
+.guide .btn-begin {
+    position: absolute;
+    bottom: .77rem;
+    right: .65rem;
+    width: .98rem;
+    height: 1rem;
+    display: none;
+    z-index: 2;
+}
+
+.btn-trigger-bg,
+.btn-trigger {
+    position: fixed;
+    bottom: .67rem;
+    right: .9rem;
+    width: 2.31rem;
+    height: 1rem;
+    z-index: 999;
+    -webkit-animation: stop 1s linear infinite;
+    animation: stop 1s linear infinite;
+    pointer-events: none;
+}
+
+.btn-trigger-bg.run {
+    -webkit-animation: stop 3s linear infinite;
+    animation: stop 3s linear infinite;
+}
+
+.btn-trigger.none {
+    opacity: 0;
+}
+
+.end {
+}
+
+.btn-replay {
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-.45rem, 0, 0);
+    top: 3.38rem;
+    width: 1.16rem;
+    height: 1.18rem;
+}
+
+#btnReplay {
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-.45rem, 0, 0);
+    top: 3.38rem;
+    width: 1.16rem;
+    height: 1.18rem;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.baidu-news {
+    top: 5.47rem;
+    width: 1.57rem;
+    height: .5rem;
+}
+
+.end .text {
+    position: absolute;
+    left: .2rem;
+    right: .2rem;
+    top: 3.4rem;
+    font-size: .32rem;
+    line-height: .44rem;
+    text-align: center;
+    color: #eceff1;
+    pointer-events: none;
+}
+
+.stop {
+    -webkit-animation: stop 1s linear infinite;
+    animation: stop 1s linear infinite;
+}
+
+.mark {
+    background: rgba(235, 50, 100, .5);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+img {
+    -webkit-touch-callout: none;
+}
+
+.img {
+    pointer-events: none;
+}
+
+.baidu-copyright {
+    position: absolute;
+}
+
+.copyright-1, .btn-box {
+    position: absolute;
+    left: 50%;
+    width: 1.94rem;
+    height: .49rem;
+    bottom: .6rem;
+    margin-left: -1.95rem;
+}
+
+.copyright-2, .btn-news {
+    position: absolute;
+    left: 50%;
+    width: 1.8rem;
+    height: .58rem;
+    bottom: .67rem;
+    margin-left: .5rem;
+}
+
+#btnBegin {
+    position: absolute;
+    bottom: .77rem;
+    right: .65rem;
+    width: .98rem;
+    height: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 3;
+}
+
+.video-wrapper {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.pt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#videoT {
+    width: 100%;
+    height: 100%;
+}
+
+#bgWrapper,
+#imgBg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+#bgWrapper {
+    background-image: url('../img/t-end.jpg');
+}
+
+#imgBg {
+}
+
+#proposal {
+    position: absolute;
+    font-size: .2rem;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    top: 4em;
+}
+
+.later-text {
+    position: absolute;
+    font-size: .32rem;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 1rem;
+    color: #eceff1;
+    animation: twinkle 3s linear infinite;
+    z-index: 2;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .3;
+    }
+}
+
+.share {
+    position: absolute;
+    width: 1.9rem;
+    height: .39rem;
+    top: .55rem;
+    left: .52rem;
+    display: none;
+}
+.share-2 {
+    position: absolute;
+    width: 1.75rem;
+    height: .39rem;
+    top: .55rem;
+    right: .52rem;
+    display: none;
+}
+
+a{
+    border:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent;
+    outline:none;
+    display: block;
+}
